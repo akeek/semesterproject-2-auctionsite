@@ -8,7 +8,8 @@
     "test": "node src/**/*.js",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint src/**/*.js --cache --fix",
-    "format": "prettier -w src/**/*.js"
+    "format": "prettier -w src/**/*.js",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,23 @@
   "homepage": "https://github.com/akeek/semesterproject-2-auctionsite#readme",
   "devDependencies": {
     "eslint": "^8.29.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
     "prettier": "^2.8.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.scss": [
+      "prettier --write"
+    ],
+    "*.css": [
+      "prettier --write"
+    ]
   }
 }
