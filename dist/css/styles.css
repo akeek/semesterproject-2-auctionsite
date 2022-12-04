@@ -1,8 +1,12 @@
 .test {
-  display: none;
+  display: block;
 }
 .test-button {
   background-color: blue;
+}
+
+.headline {
+  color: blue;
 }
 
 /*# sourceMappingURL=styles.css.map */
