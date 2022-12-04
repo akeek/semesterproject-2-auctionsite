@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/akeek/semesterproject-2-auctionsite#readme",
   "devDependencies": {
+    "eslint": "^8.29.0",
     "prettier": "^2.8.0"
   }
 }
