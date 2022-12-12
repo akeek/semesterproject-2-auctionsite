@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .right {
   position: absolute;
   right: 0;
@@ -27,6 +33,11 @@
 
 #brand-width {
   width: 50%;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
 }
 
 @media (max-width: 800px) {

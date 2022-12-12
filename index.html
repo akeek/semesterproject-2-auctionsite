@@ -8,73 +8,91 @@
     <title>Document</title>
   </head>
 
-  <header>
-    <nav class="navbar navbar-expand-lg my-3">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <form class="d-flex left w-50" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-        </form>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse right" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-current="page" href="#"
-                >New listing</a
-              >
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg my-3">
+        <div class="container-fluid">
+          <div>
+            <a class="logo" href="#">
+              <img
+                src="assets/images/kutsu.png"
+                alt="company logo"
+                width="60"
+                height="30"
+              />
+            </a>
+          </div>
+          <form class="d-flex left w-50" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse right pe-3"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-current="page" href="#"
+                  >New listing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Log in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid mb-4 py-2 mx-0" id="brand-bar">
+        <div class="mx-auto" id="brand-width">
+          <ul id="brand-link">
+            <li>
+              <a class="nav-link" href="#">Nike</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+            <li>
+              <a class="nav-link" href="#">Adidas</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Log in</a>
+            <li>
+              <a class="nav-link" href="#">New Balance</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Register</a>
+            <li>
+              <a class="nav-link" href="#">Jordan</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-  </header>
-
-  <body>
-    <div class="container-fluid mb-4 py-2 mx-0" id="brand-bar">
-      <div class="mx-auto" id="brand-width">
-        <ul id="brand-link">
-          <li>
-            <a class="nav-link" href="#">Nike</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Adidas</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">New Balance</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Jordan</a>
-          </li>
-        </ul>
+      <div>
+        <h1 class="headline">Here I will present good content</h1>
       </div>
-    </div>
-    <div>
-      <h1 class="headline">Headline</h1>
-    </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>This is going to be a great footer</p>
+      </div>
+    </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
