@@ -13,7 +13,11 @@ body {
 
 .left {
   position: absolute;
-  left: 130px;
+  left: 125px;
+}
+
+#searchfield {
+  width: 45%;
 }
 
 #brand-bar {
@@ -35,12 +39,31 @@ body {
   width: 50%;
 }
 
-footer {
-  margin-top: auto;
-  text-align: center;
+.header-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-top: 20px;
 }
 
-@media (max-width: 800px) {
+footer {
+  margin-top: auto;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  background-color: #5488e22d;
+}
+
+.footer p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+@media (max-width: 991px) {
   #brand-link {
     font-size: 0.9rem;
   }
@@ -4195,6 +4218,23 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: 1.3rem;
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+@media (max-width: 800px) {
+  .nav-link {
+    font-size: 0.8rem;
+  }
+}
+
+.nav-link-1 {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);
@@ -4412,6 +4452,38 @@ fieldset:disabled .btn {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+}
+
+#nav-background {
+  padding: 20px;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 56px;
+  }
+
+  #nav-background {
+    padding: 0 20px;
+    background-color: #5488e2;
+    color: white;
+  }
+
+  .nav-link {
+    color: white;
+    width: 100%;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #5488e2;
+    background-color: white;
+  }
 }
 
 .navbar-toggler {
