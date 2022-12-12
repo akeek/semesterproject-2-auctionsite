@@ -13,7 +13,7 @@ body {
 
 .left {
   position: absolute;
-  left: 110px;
+  left: 130px;
 }
 
 #brand-bar {
@@ -47,6 +47,16 @@ footer {
 
   #brand-width {
     width: 75%;
+  }
+
+  .logo img {
+    width: 70px;
+    height: 30px;
+  }
+
+  .left {
+    position: absolute;
+    left: 100px;
   }
 }
 
