@@ -10,6 +10,10 @@
   left: 110px;
 }
 
+#brand-bar {
+  background-color: rgb(222, 192, 159);
+}
+
 #brand-link {
   display: flex;
   flex-direction: row;
@@ -18,12 +22,31 @@
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
-  font-size: 1.3rem;
   color: rgb(93, 93, 93);
 }
 
-#brand-bar {
-  background-color: rgb(222, 192, 159);
+#brand-width {
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  #brand-link {
+    font-size: 0.9rem;
+  }
+
+  #brand-width {
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  #brand-link {
+    font-size: 0.7rem;
+  }
+
+  #brand-width {
+    width: 90%;
+  }
 }
 
 /*!
