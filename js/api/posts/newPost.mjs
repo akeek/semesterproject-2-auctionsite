@@ -7,7 +7,7 @@ const description = document.getElementById("description");
 const media = document.getElementById("media");
 const endTime = document.getElementById("end-time");
 
-async function newPost(url, data) {
+async function newListing(url, data) {
     try {
         const token = localStorage.getItem("accessToken");
         const postData = {
@@ -41,6 +41,6 @@ export function sendPost() {
         if (!postValue.media) {
             delete postValue.media;
         }
-        newPost(`${BASE_API_URL}/api/v1/auction/posts`, postValue);
+        newListing(`${BASE_API_URL}/api/v1/auction/posts`, postValue);
     });
 }
