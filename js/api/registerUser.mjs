@@ -18,7 +18,6 @@ async function registerUser(url, data) {
 
         const response = await fetch(url, postData);
         const json = await response.json();
-        console.log(json);
         if ((json.statusCode === 400)) {
             error();
         } else {

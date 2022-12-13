@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg my-3">
+            <div class="container-fluid">
+                <div>
+                    <a class="logo" href="index.html">
+                        <img src="assets/images/kutsu.png" alt="company logo" width="90" height="50" class="logo" />
+                    </a>
+                </div>
+                <form class="d-flex left" role="search" id="searchfield">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse right pe-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-background">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-current="page" href="#">New listing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid mb-4 py-2 mx-0" id="brand-bar">
+            <div class="mx-auto" id="brand-width">
+                <ul id="brand-link">
+                    <li>
+                        <a class="nav-link-1" href="#">Nike</a>
+                    </li>
+                    <li>
+                        <a class="nav-link-1" href="#">Adidas</a>
+                    </li>
+                    <li>
+                        <a class="nav-link-1" href="#">New Balance</a>
+                    </li>
+                    <li>
+                        <a class="nav-link-1" href="#">Jordan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="profile-img"></div>
+        <div class="py-3 min-vh-100">
+            <div class="container row mx-auto">
+                <div class="container col-md-4  d-flex flex-column gap-3 mb-3">
+                    <div class="card border-0" id="profile-info-container"></div>
+                </div>
+                <div id="author-name"></div>
+                <div class="container col-md-6 d-flex flex-column mb-4">
+                    <div class="card border-0" id="profile-container"></div>
+                </div>
+                <div class="container d-flex flex-column gap-3">
+                    <div class="card border-0 bg-white mb-2">
+                        <div class="card-body">
+                            <h2> New listing</h2>
+                            <form class="was-validated" id="post-form">
+                                <div class="mb-2">
+                                    <label for="title" class="form-label visually-hidden">Title</label>
+                                    <input type="text" class="form-control border-0 bg-light" id="title" name="title"
+                                        placeholder="Title" required />
+                                </div>
+                                <div class="mb-2">
+                                    <label for="description" class="form-label visually-hidden">Description</label>
+                                    <textarea class="form-control border-0 bg-light" id="description" name="description"
+                                        rows="3" placeholder="Description"></textarea>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="tags" class="form-label visually-hidden">Tags</label>
+                                    <textarea class="form-control border-0 bg-light" id="tags" name="tags" rows="1"
+                                        placeholder="Tags"></textarea>
+                                    <div class="text-muted fst-italic fw-light ps-2">Example: Nike, Jordan, Shoes</div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="media" class="form-label visually-hidden">Media</label>
+                                    <input type="url" class="form-control border-0 bg-light" id="media" name="media"
+                                        placeholder="Media (URL)" />
+                                    <div class="text-muted fst-italic fw-light ps-2">https://example.com,
+                                        https://example1.com, https://example2.com</div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="endtime" class="form-label visually-hidden">Endtime</label>
+                                    <input type="datetime" class="form-control border-0 bg-light" id="end-time"
+                                        name="endtime" rows="1" placeholder="End date" min="2022-11-30T00:00"
+                                        max="2024-12-31T00:00" required></input>
+                                    <div class="text-muted fst-italic fw-light ps-2">Example: 2023-06-12T19:30</div>
+                                </div>
+                                <div class="d-flex mt-3">
+                                    <button type="submit" class="btn btn-primary m-auto">Post</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header border-0">
+                                    <h1 class="modal-title fs-5" id="modalLabel">Edit post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="modal-body">
+                                    <form id="updated-form">
+                                        <input type="hidden" id="updated-id">
+                                        <div class="mb-2">
+                                            <label for="updated-title" class="form-label visually-hidden">Title</label>
+                                            <input type="text" class="form-control border-0 bg-light" id="updated-title"
+                                                name="updated-title" placeholder="Title" />
+                                        </div>
+                                        <div class="mb-2">
+                                            <label for="updated-body" class="form-label visually-hidden">Body</label>
+                                            <textarea class="form-control border-0 bg-light" id="updated-body"
+                                                name="updated-body" rows="3" placeholder="Text"></textarea>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label for="updated-media" class="form-label visually-hidden">Media</label>
+                                            <input type="url" class="form-control border-0 bg-light" id="updated-media"
+                                                name="updated-media" placeholder="Media (URL)" />
+                                        </div>
+                                        <div class="d-flex mt-3">
+                                            <button type="submit" class="btn btn-primary m-auto">Update post</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column-reverse" id="posts-container">
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>This is going to be a great footer</p>
+        </div>
+    </footer>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/index.mjs"></script>
+</body>
+
+</html>
