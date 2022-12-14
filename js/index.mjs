@@ -1,7 +1,7 @@
 import { submitUserValues } from "./api/registerUser.mjs";
 import { submitLoginUser } from "./api/login.mjs";
 import { findProfile } from "./api/findProfile.mjs";
-import { showListings } from "./api/posts/showListings.mjs";
+// import { showListings } from "./api/posts/showListings.mjs";
 import { user } from "./api/findProfile.mjs";
 import { sendPost } from "./api/posts/newPost.mjs";
 
@@ -14,7 +14,7 @@ if (path === "/register.html") {
     submitLoginUser();
 } else if (path === "/profile.html") {
     findProfile(`${BASE_API_URL}/api/v1/auction/profiles/${user}?_posts=true`);
-    showListings(`${BASE_API_URL}/api/v1/auction/profiles/${user}/listings`)
+    //showListings(`${BASE_API_URL}/api/v1/auction/profiles/${user}/listings`)
     sendPost();
     //   submitUpdatedPost();
 } 
