@@ -1,11 +1,11 @@
 import { BASE_API_URL } from "../../index.mjs";
 
 const postForm = document.getElementById("post-form");
-const body = document.getElementById("post-container");
 const title = document.getElementById("title");
 const description = document.getElementById("description");
+const tags = document.getElementById("tags");
 const media = document.getElementById("media");
-const endTime = document.getElementById("end-time");
+const endsAt = document.getElementById("end-time");
 
 async function newListing(url, data) {
     try {
@@ -35,12 +35,13 @@ export function sendPost() {
         const postValue = {
             title: title.value,
             description: description.value,
+            tags: tags.value,
             media: media.value,
-            endTime: endTime.value
+            endsAt: endsAt.value
         };
         if (!postValue.media) {
             delete postValue.media;
         }
-        newListing(`${BASE_API_URL}/api/v1/auction/posts`, postValue);
+        newListing(`${BASE_API_URL}/api/v1/auction/listings`, postValue);
     });
 }
