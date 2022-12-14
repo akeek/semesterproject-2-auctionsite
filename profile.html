@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse right pe-3" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-background">
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-current="page" href="#">New listing</a>
+                            <a class="nav-link" aria-current="page" href="new-listing.html">New listing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About us</a>
@@ -94,8 +94,8 @@
                                 </div>
                                 <div class="mb-2">
                                     <label for="tags" class="form-label visually-hidden">Tags</label>
-                                    <textarea class="form-control border-0 bg-light" id="tags" name="tags" rows="1"
-                                        placeholder="Tags"></textarea>
+                                    <input type="text" class="form-control border-0 bg-light" id="tags" name="tags"
+                                        rows="1" placeholder="Tags"></input>
                                     <div class="text-muted fst-italic fw-light ps-2">Example: Nike, Jordan, Shoes</div>
                                 </div>
                                 <div class="mb-2">
@@ -110,46 +110,13 @@
                                     <input type="datetime" class="form-control border-0 bg-light" id="end-time"
                                         name="endtime" rows="1" placeholder="End date" min="2022-11-30T00:00"
                                         max="2024-12-31T00:00" required></input>
-                                    <div class="text-muted fst-italic fw-light ps-2">Example: 2023-06-12T19:30</div>
+                                    <div class="text-muted fst-italic fw-light ps-2">Example: 2023-05-01T00:00:00.000Z
+                                    </div>
                                 </div>
                                 <div class="d-flex mt-3">
                                     <button type="submit" class="btn btn-primary m-auto">Post</button>
                                 </div>
                             </form>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header border-0">
-                                    <h1 class="modal-title fs-5" id="modalLabel">Edit post</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body" id="modal-body">
-                                    <form id="updated-form">
-                                        <input type="hidden" id="updated-id">
-                                        <div class="mb-2">
-                                            <label for="updated-title" class="form-label visually-hidden">Title</label>
-                                            <input type="text" class="form-control border-0 bg-light" id="updated-title"
-                                                name="updated-title" placeholder="Title" />
-                                        </div>
-                                        <div class="mb-2">
-                                            <label for="updated-body" class="form-label visually-hidden">Body</label>
-                                            <textarea class="form-control border-0 bg-light" id="updated-body"
-                                                name="updated-body" rows="3" placeholder="Text"></textarea>
-                                        </div>
-                                        <div class="mb-2">
-                                            <label for="updated-media" class="form-label visually-hidden">Media</label>
-                                            <input type="url" class="form-control border-0 bg-light" id="updated-media"
-                                                name="updated-media" placeholder="Media (URL)" />
-                                        </div>
-                                        <div class="d-flex mt-3">
-                                            <button type="submit" class="btn btn-primary m-auto">Update post</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="d-flex flex-column-reverse" id="posts-container">
