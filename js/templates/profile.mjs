@@ -11,7 +11,7 @@ export function profileTemp(data) {
     // Style profile
     headline.classList.add("h1", "text-center", "mb-3");
     fullProfile.classList.add("card-body", "align-items-center", "d-flex", "flex-column-reverse");
-    profilePicture.classList.add("mt-3", "img-fluid", "medium");
+    profilePicture.classList.add("img-fluid", "medium");
 
     // HTML Profile
     headline.textContent = name
