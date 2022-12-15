@@ -1,13 +1,13 @@
 // Template for the users listings on the profilepage
 
 export function usersListings(data) {
-    const { title, description, media, endsAt, id } = data;
+    const { title, description, media, endsAt } = data;
 
     // Description
     // Create description
     const contentContainer = document.createElement("div");
-    const titleContainer = document.createElement("a");
-    const descriptioncontainer = document.createElement("a");
+    const titleContainer = document.createElement("h4");
+    const descriptioncontainer = document.createElement("p");
     const mediaContainer = document.createElement("img");
     const timeContainer = document.createElement("p");
 
@@ -15,16 +15,17 @@ export function usersListings(data) {
     descriptioncontainer.classList.add("pb-2", "text-decoration-none", "fw-light")
     titleContainer.classList.add("mt-2", "fs-2", "fw-bolder")
     contentContainer.classList.add("row");
-    mediaContainer.classList.add("mb-2")
+    mediaContainer.classList.add("border-1", "listing-media")
 
-    titleContainer.href = `post-by-id.html?id=${id}`;
     titleContainer.textContent = title;
-    descriptioncontainer.href = `post-by-id.html?id=${id}`;
     descriptioncontainer.textContent = description;
     mediaContainer.src = media;
-    timeContainer.textContent = endsAt;
 
-    contentContainer.append(titleContainer, descriptioncontainer, mediaContainer, timeContainer);
+    const endTime = new Date(endsAt).toLocaleString("en-GB", { timeStyle: "short", dateStyle: "short" });
+    timeContainer.textContent = `Ends at: ${endTime}`;
+
+
+    contentContainer.append(titleContainer, timeContainer, descriptioncontainer, mediaContainer);
 
     // Full post
     // Create full post
@@ -32,8 +33,7 @@ export function usersListings(data) {
     const postContent = document.createElement("div");
 
     // Style full post
-    fullPost.classList.add("card", "border-0", "mb-4");
-    fullPost.id = id;
+    fullPost.classList.add("card", "border-1", "mb-4");
     postContent.classList.add("card-body");
 
     postContent.append(contentContainer);
