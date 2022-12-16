@@ -15,8 +15,9 @@ if (path === "/register.html") {
     submitLoginUser();
 } else if (path === "/profile.html") {
     findProfile(`${BASE_API_URL}/api/v1/auction/profiles/${user}?_posts=true`);
-    getPosts(`${BASE_API_URL}/api/v1/auction/listings?_tag=aake`)
+    getPosts(`${BASE_API_URL}/api/v1/auction/listings?_tag=aake`);
     //showListings(`${BASE_API_URL}/api/v1/auction/profiles/${user}/listings`)
     sendPost();
-
+} else if (path === "/index.html") {
+    getPosts(`${BASE_API_URL}/api/v1/auction/listings?_tag=aake`);
 } 
