@@ -1,4 +1,4 @@
-import { submitUserValues } from "./auth/registerUser.mjs";
+import { submitUserValues } from "./auth/register.mjs";
 import { submitLoginUser } from "./auth/login.mjs";
 import { findProfile } from "./profile/findProfile.mjs";
 // import { showListings } from "./api/posts/showListings.mjs";
