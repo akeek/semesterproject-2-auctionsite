@@ -4,7 +4,7 @@ import { findProfile } from "./api/findProfile.mjs";
 // import { showListings } from "./api/posts/showListings.mjs";
 import { getPosts } from "./api/posts/getListings.mjs";
 import { user } from "./api/findProfile.mjs";
-import { sendPost } from "./api/posts/newPost.mjs";
+import { sendPost } from "./api/posts/newListing.mjs";
 
 export const path = location.pathname;
 export const BASE_API_URL = "https://api.noroff.dev";
