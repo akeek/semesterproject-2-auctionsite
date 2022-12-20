@@ -1,4 +1,4 @@
-import { BASE_API_URL } from "../../index.mjs";
+import { BASE_API_URL } from "../index.mjs";
 
 const username = document.getElementById("username");
 const email = document.getElementById("email");

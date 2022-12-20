@@ -1,4 +1,4 @@
-import { profileTemp } from "../../templates/profile.mjs";
+import { profileTemp } from "../templates/profile.mjs";
 
 export const user = localStorage.getItem("username");
 

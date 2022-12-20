@@ -1,4 +1,4 @@
-import { BASE_API_URL } from "../../index.mjs";
+import { BASE_API_URL } from "../index.mjs";
 
 const postForm = document.getElementById("post-form");
 const title = document.getElementById("title");

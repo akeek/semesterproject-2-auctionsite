@@ -1,6 +1,6 @@
-import { usersListings } from "../../templates/usersListings.mjs";
+import { usersListings } from "../templates/usersListings.mjs";
 
-export async function getPosts(url) {
+export async function getListings(url) {
     try {
         const response = await fetch(url);
         const results = await response.json();
