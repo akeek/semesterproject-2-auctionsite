@@ -52,19 +52,6 @@ export async function createListing(evt) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // async function newListing(url, data) {
 //     try {
 //         const token = localStorage.getItem("accessToken");
