@@ -1,13 +1,11 @@
-// import { BASE_API_URL } from "../index.mjs";
 import { API_BASE_URL, API_LISTINGS_URL } from "../variables/variables.mjs";
-import * as storage from "../storage";
 
-// const postForm = document.getElementById("post-form");
-// const title = document.getElementById("title");
-// const description = document.getElementById("description");
-// const tags = document.getElementById("tags");
-// const media = document.getElementById("media");
-// const endsAt = document.getElementById("end-time");
+
+const newItemForm = document.getElementById("add-new-item-form");
+const title = document.getElementById("title");
+const description = document.getElementById("description");
+const media = document.getElementById("media1");
+const endsAt = document.getElementById("end-time");
 
 async function createListing(url, data) {
     try {
@@ -23,7 +21,7 @@ async function createListing(url, data) {
 
         const response = await fetch(url, postData);
         const json = await response.json();
-        postForm.reset();
+        newItemForm.reset();
         window.location.reload();
         return json;
     } catch (error) {
@@ -32,12 +30,11 @@ async function createListing(url, data) {
 }
 
 export function sendPost() {
-    postForm.addEventListener("submit", (e) => {
+    newItemForm.addEventListener("submit", (e) => {
         e.preventDefault();
         const postValue = {
             title: `${title.value}`,
             description: `${description.value}`,
-            tags: `${tags.value}`,
             media: `${media.value}`,
             endsAt: `${endsAt.value}`
         };
