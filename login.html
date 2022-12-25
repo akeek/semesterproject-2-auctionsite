@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/dist/css/styles.css" />
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="js/login/login.mjs" defer></script>
   <title>Document</title>
 </head>
 
@@ -83,6 +85,9 @@
               <div class="text-center pt-5" id="error-message"></div>
             </div>
             <button type="submit" class="btn btn-primary align-self-center">Log in</button>
+            <div class="checkbox mb-3" id="error-message-container">
+              <p id="error-message">Something went wrong!</p>
+            </div>
           </form>
           <div class="mt-4 mb-2 d-flex flex-column align-items-center">
             <a href="register.html" class="text-decoration-none">Create account</a>
@@ -96,8 +101,7 @@
       <p>This is going to be a great footer</p>
     </div>
   </footer>
-  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="module" src="js/index.mjs"></script>
+
 </body>
 
 </html>
