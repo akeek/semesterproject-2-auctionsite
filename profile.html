@@ -67,67 +67,67 @@
                 </ul>
             </div>
         </div>
-        <div class="profile-img"></div>
-        <div class="py-3 min-vh-100">
-            <div class="container row mx-auto">
-                <div class="container col-md-4  d-flex flex-column gap-3 mb-3">
-                    <div class="card border-0" id="profile-info-container"></div>
-                </div>
-                <div id="author-name"></div>
-                <div class="container col-md-6 d-flex flex-column mb-4">
-                    <div class="card border-0" id="profile-container"></div>
-                </div>
-                <div class="container d-flex flex-column gap-3">
-                    <!-- <div class="card border-0 bg-white mb-2">
+        <section class="container px-2 py-3 text-center">
+            <h1 class="text-center">My account</h1>
+
+            <!-- profile avatar -->
+            <div class="text-center" id="user-avatar"></div>
+
+            <!-- change avatar form -->
+            <div class="container col-lg-5 col-sm-12 text-center" id="form-change-avatar-container">
+                <form id="form-change-avatar">
+                    <!-- image url input -->
+                    <div id="image-input" class="mt-3">
+                        <input type="url" name="avatar" id="avatar-media" class="form-control"
+                            placeholder="Avatar media URL" maxlength="1000"
+                            title="Example: https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png" required />
+                        <label for="avatar-media" style="visibility: hidden">Avatar</label>
+                    </div>
+
+                    <!-- send button -->
+                    <button class="btn btn-small btn-primary" type="submit" id="send-avatar-button">Change
+                        avatar</button>
+                    <br />
+                    <br />
+                </form>
+            </div>
+
+            <!-- profile info -->
+            <div id="user-profile-info">
+                <p class="text-center" id="user-name"><b>Name: </b>Name</p>
+                <p class="text-center" id="user-credits"><b>Credits: </b>1000</p>
+                <p class="text-center" id="user-email"><b>Email: </b>ola@nordmann.no</p>
+            </div>
+
+            <!-- add item -->
+            <a href="/item-add.html" class="btn btn-small btn-primary text-white px-5 py-2"><strong>Add new
+                    item</strong></a>
+        </section>
+
+        <!-- MY LISTINGS -->
+        <section class="px-5 mt-5" style="max-width: 1600px; margin: auto">
+            <hr />
+            <h2 class="text-start">My listings</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-3" id="cards-container">
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="/item.html"><img src="/assets/images/j1lost.jpg" class="card-img-top"
+                                alt="Image description" /></a>
                         <div class="card-body">
-                            <h2> New listing</h2>
-                            <form class="was-validated" id="post-form">
-                                <div class="mb-2">
-                                    <label for="title" class="form-label visually-hidden">Title</label>
-                                    <input type="text" class="form-control border-0 bg-light" id="title" name="title"
-                                        placeholder="Title" required />
-                                </div>
-                                <div class="mb-2">
-                                    <label for="description" class="form-label visually-hidden">Description</label>
-                                    <textarea class="form-control border-0 bg-light" id="description" name="description"
-                                        rows="3" placeholder="Description"></textarea>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="tags" class="form-label visually-hidden">Tags</label>
-                                    <input type="text" class="form-control border-0 bg-light" id="tags" name="tags"
-                                        rows="1" placeholder="Tags"></input>
-                                    <div class="text-muted fst-italic fw-light ps-2">Example: Nike, Jordan, Shoes</div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="media" class="form-label visually-hidden">Media</label>
-                                    <input type="url" class="form-control border-0 bg-light" id="media" name="media"
-                                        placeholder="Media (URL)" />
-                                    <div class="text-muted fst-italic fw-light ps-2">https://example.com,
-                                        https://example1.com, https://example2.com</div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="endtime" class="form-label visually-hidden">Endtime</label>
-                                    <input type="datetime" class="form-control border-0 bg-light" id="end-time"
-                                        name="endtime" rows="1" placeholder="End date" min="2022-11-30T00:00"
-                                        max="2024-12-31T00:00" required></input>
-                                    <div class="text-muted fst-italic fw-light ps-2">Example: 2023-05-01T00:00:00.000Z
-                                    </div>
-                                </div>
-                                <div class="d-flex mt-3">
-                                    <button type="submit" class="btn btn-primary m-auto">Post</button>
-                                </div>
-                            </form>
+                            <a href="/item.html" class="text-decoration-none">
+                                <h3 class="card-title">Card title</h3>
+                            </a>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                            <p class="mb-1"><strong>Suggested price:</strong>$$$</p>
+                            <p><strong>Deadline: </strong>date & time</p>
+                            <a href="/item.html" class="btn btn-primary px-4 text-white"><strong>Details</strong></a>
                         </div>
-                    </div> -->
-                    <div id="listings-container">
                     </div>
                 </div>
             </div>
-            <div class="text-center">
-                <a href="/new-listing.html" class="btn btn-small btn-primary text-white px-5 py-2 mx-auto"><strong>Add
-                        new item</strong></a>
-            </div>
-
+        </section>
+        </div>
     </main>
     <footer>
         <div class="footer">
@@ -135,7 +135,9 @@
         </div>
     </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="js/index.mjs"></script>
+    <script type="module" src="/js/profile/display-profile.mjs"></script>
+    <script type="module" src="/js/profile/update-avatar.mjs"></script>
+
 </body>
 
 </html>
