@@ -68,47 +68,50 @@
             </div>
         </div>
         <section class="container px-2 py-3 text-center">
-            <h1 class="text-center">My account</h1>
+            <h1 class="text-center">My account info</h1>
 
             <!-- profile avatar -->
-            <div class="text-center" id="user-avatar"></div>
-
-            <!-- change avatar form -->
-            <div class="container col-lg-5 col-sm-12 text-center" id="form-change-avatar-container">
-                <form id="form-change-avatar">
-                    <!-- image url input -->
-                    <div id="image-input" class="mt-3">
-                        <input type="url" name="avatar" id="avatar-media" class="form-control"
-                            placeholder="Avatar media URL" maxlength="1000"
-                            title="Example: https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png" required />
-                        <label for="avatar-media" style="visibility: hidden">Avatar</label>
-                    </div>
-
-                    <!-- send button -->
-                    <button class="btn btn-small btn-primary" type="submit" id="send-avatar-button">Change
-                        avatar</button>
-                    <br />
-                    <br />
-                </form>
-            </div>
+            <div class="text-center pt-3" id="user-avatar"></div>
 
             <!-- profile info -->
-            <div id="user-profile-info">
+            <div class="px-2 py-3" id="user-profile-info">
                 <p class="text-center" id="user-name"><b>Name: </b>Name</p>
                 <p class="text-center" id="user-credits"><b>Credits: </b>1000</p>
                 <p class="text-center" id="user-email"><b>Email: </b>ola@nordmann.no</p>
             </div>
 
-            <!-- add item -->
-            <a href="/item-add.html" class="btn btn-small btn-primary text-white px-5 py-2"><strong>Add new
-                    item</strong></a>
+            <!-- change avatar form -->
+            <div class="container col-lg-5 col-sm-12 text-center" id="form-change-avatar-container">
+                <form id="form-change-avatar">
+                    <!-- image url input -->
+                    <div id="image-input">
+                        <input type="url" name="avatar" id="avatar-media" class="form-control"
+                            placeholder="Paste url here to change profilepicture" maxlength="1000"
+                            title="Example: https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png" required />
+                        <label for="avatar-media" style="visibility: hidden">Avatar</label>
+                    </div>
+
+                    <!-- send button -->
+                    <button class="btn btn-small btn-primary" type="submit" id="send-avatar-button">Update
+                        avatar</button>
+                    <br />
+                    <br />
+                </form>
+            </div>
         </section>
+
+
 
         <!-- MY LISTINGS -->
         <section class="px-5 mt-5" style="max-width: 1600px; margin: auto">
             <hr />
             <h2 class="text-start">My listings</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-3" id="cards-container">
+            <section class="mb-2">
+                <!-- add item -->
+                <div class="py-3"><a href="/item-add.html" class="btn btn-small btn-primary text-white">Add new
+                        item</a></div>
+            </section>
+            <div class="row row-cols-1 row-cols-md-3 g-3" id="listings-container">
                 <div class="col">
                     <div class="card h-100">
                         <a href="/item.html"><img src="/assets/images/j1lost.jpg" class="card-img-top"
@@ -137,6 +140,7 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="/js/profile/display-profile.mjs"></script>
     <script type="module" src="/js/profile/update-avatar.mjs"></script>
+    <script type="module" src="/js/profile/my-listings-api.mjs"></script>
 
 </body>
 
