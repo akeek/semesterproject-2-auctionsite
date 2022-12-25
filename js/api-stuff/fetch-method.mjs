@@ -21,6 +21,14 @@ export const methodsOfFetch = {
             Authorization: `Bearer ${token}`,
         },
     },
+    updateAvatar: {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+        },
+    },
+    body: "",
     getListings: {
         method: "GET",
         headers: {
