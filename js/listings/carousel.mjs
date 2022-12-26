@@ -1,5 +1,5 @@
-export function createCarouselSlider(listingData) {
-  for (let i = 0; i < listingData.media.length; i++) {
+export function createCarouselSlider(data) {
+  for (let i = 0; i < data.media.length; i++) {
     const buttonContainer = document.querySelector("#slider-buttons-container");
     const imageContainer = document.querySelector("#image-container");
     buttonContainer.innerHTML += `
@@ -7,11 +7,11 @@ export function createCarouselSlider(listingData) {
       `;
     imageContainer.innerHTML += `
           <div class="carousel-item active">
-              <img src="${listingData.media[i]}" alt="Image of ${listingData.title}" class="d-block" style="width: 100%; height: 50vh; object-fit: cover;"/>
+              <img src="${data.media[i]}" alt="Image of ${data.title}" class="d-block" style="width: 100%; height: 60vh; object-fit: cover;"/>
           </div>
       `;
   }
-  if (listingData.media.length === 1) {
+  if (data.media.length === 1) {
     const sliderButtons = document.querySelector("#slider-buttons-container");
     sliderButtons.style.display = "none";
 
