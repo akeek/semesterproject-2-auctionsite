@@ -85,11 +85,25 @@ footer {
   }
 
   #navbarSupportedContent ul li a {
-    color: white;
+    color: var(--bs-primary);
   }
 
   #navbarSupportedContent ul li a:hover {
+    color: white;
+    background-color: var(--bs-primary);
+  }
+
+  #navbarText {
+    background-color: white;
+  }
+
+  #navbarText ul li a {
     color: var(--bs-primary);
+  }
+
+  #navbarText ul li a:hover {
+    color: white;
+    background-color: var(--bs-primary);
   }
 }
 
@@ -4463,7 +4477,7 @@ fieldset:disabled .btn {
 
   #nav-background {
     padding: 0 20px;
-    background-color: #5488e2;
+    background-color: white;
     color: white;
   }
 
