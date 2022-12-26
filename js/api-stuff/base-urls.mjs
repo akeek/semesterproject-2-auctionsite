@@ -29,3 +29,19 @@ export function avatarURL(name) {
 export function listingsByProfileURL(name) {
     return `${API_BASE_URL}/auction/profiles/${name}/listings?_seller=true&_bids=true&sort=created&sortOrder=desc&_active=true`;
 }
+
+// Create listing
+export const createListingURL = `${API_BASE_URL}/auction/listings`;
+
+// Single listing
+export function getListingURL(listingID) {
+    return `${API_BASE_URL}/auction/listings/${listingID}?_seller=true&_bids=true`;
+}
+
+// Make bid
+export function bidURL(listingID) {
+    return `${API_BASE_URL}/auction/listings/${listingID}/bids`;
+}
+
+// All listings Desc
+export const allListingsDesc = `${API_BASE_URL}/auction/listings?_seller=true&_bids=true&sort=created&sortOrder=desc&_active=true`;

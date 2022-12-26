@@ -36,4 +36,27 @@ export const methodsOfFetch = {
             Authorization: `Bearer ${token}`,
         },
     },
+    createListing: {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+        },
+        body: "",
+    },
+    getListing: {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+        },
+    },
+    sendBidMethod: {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+        },
+        body: "",
+    },
 };
