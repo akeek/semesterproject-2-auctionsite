@@ -26,7 +26,7 @@ showUserInfo();
 
 function throwIfLoggedOut() {
     if (!userName) {
-        location.href = "/index.html";
+        location.href = "/login.html";
     }
 }
 throwIfLoggedOut();
