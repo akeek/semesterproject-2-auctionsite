@@ -23,7 +23,7 @@ export async function loginAuthUser(url, userCredentials) {
             localStorage.setItem("avatar", json.avatar);
             localStorage.setItem("token", json.accessToken);
 
-            location.href = "/profile.html";
+            location.href = "/logged-in.html";
         }
     } catch (error) {
         console.log(error);
