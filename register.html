@@ -66,40 +66,59 @@
         </ul>
       </div>
     </div>
-    <div class="p-4 container min-vh-100">
-      <div class="card card-login border-1 p-4 mx-auto">
-        <div class="card-body">
-          <h1 class="text-center p-2">Register an account</h1>
+    <section>
+      <div class="container px-4 py-1 col-lg-4 col-sm-12 text-center">
+        <h1 class="text-center mt-4 mb-4">Sign up</h1>
+        <div class="form-signin">
+          <form action="/profile.html" id="signupform">
 
-          <form class="d-flex flex-column was-validated" id="register-form">
-            <div class="mb-4">
-              <label for="name" class="form-label">Username</label>
-              <input type="text" name="name" class="form-control border-0 bg-light" id="username"
-                aria-describedby="username" pattern="^[\w]+$" required />
+            <div class="form-floating mb-4">
+              <input type="text" name="name" id="username" class="form-control" placeholder="Ola Nordmann"
+                maxlength="20" pattern="^[\w]+$"
+                title="Username must not contain punctuation symbols apart from underscore" required />
+              <label for="username">Username</label>
             </div>
-            <div class="mb-4">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" name="email" class="form-control border-0 bg-light" id="email"
-                aria-describedby="email" pattern="^[\w\-.]+@(stud.)?noroff.no$" required />
-              <div class="text-muted fst-italic fw-light">The email must be a noroff.no address</div>
+
+
+            <div class="form-floating">
+              <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com"
+                maxlength="100" pattern="^[\w\-.]+@stud.?noroff.no$" title="Enter a valid @stud.noroff.no email address"
+                required />
+              <label for="email">Email</label>
             </div>
-            <div class="mb-4">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" name="password" class="form-control border-0 bg-light" id="password"
-                aria-describedby="password" minlength="8" required />
-              <div class="text-muted fst-italic fw-light">The password must be 8 characters or longer</div>
+
+
+            <div class="form-floating">
+              <input type="password" name="password" id="password" class="form-control my-3" placeholder="Password"
+                maxlength="20" minlength="8" pattern="^.(?=.{7,})(?=.[a-zA-Z]).*$"
+                title="Password must be between 8 and 20 characters long" required />
+              <label class="was-validated" for="password">Password</label>
             </div>
-            <div class="mb-4">
-              <label for="password" class="form-label">Profile photo</label>
-              <input type="url" name="avatar" class="form-control border-0 bg-light" id="avatar" />
-              <div class="text-muted fst-italic fw-light">Https://example.com</div>
+
+
+            <div class="form-floating">
+              <input type="url" name="avatar" class="form-control my-3" id="avatar" placeholder="Profile photo" />
+              <label class="was-validated" for="avatar">Profile photo</label>
             </div>
-            <div class="m-auto" id="error-message"></div>
-            <button type="submit" class="btn btn-primary align-self-center">Sign up</button>
+
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit"><strong>Register</strong></button>
+            <br />
+            <br />
+
+
+            <div class="checkbox mb-3" id="error-message-container">
+              <p id="error-message">An error has occurred</p>
+            </div>
+
+
+            <div class="checkbox mb-3 login-link">
+              <a href="/login.html">Click here to login!</a>
+            </div>
           </form>
         </div>
       </div>
-    </div>
+    </section>
 
   </main>
   <footer>
@@ -108,7 +127,7 @@
     </div>
   </footer>
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="module" src="js/index.mjs"></script>
+  <script type="module" src="/js/register/register.mjs"></script>
 </body>
 
 </html>
