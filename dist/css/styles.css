@@ -84,14 +84,12 @@ footer {
     left: 100px;
   }
 
-  #navbarText a {
-    background-color: white;
-    color: var(--bs-primary);
+  #navbarSupportedContent ul li a {
+    color: white;
   }
 
-  #navbarText a:hover {
-    background-color: var(--bs-primary);
-    color: white;
+  #navbarSupportedContent ul li a:hover {
+    color: var(--bs-primary);
   }
 }
 
