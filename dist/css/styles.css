@@ -32,10 +32,6 @@ body {
   color: var(--bs-secondary);
 }
 
-#navbarText {
-  position: absolute;
-}
-
 .card-title {
   color: #000;
 }
