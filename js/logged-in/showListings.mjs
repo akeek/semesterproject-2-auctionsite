@@ -20,7 +20,7 @@ export function showListingsLoggedIn(allListings) {
     listingsContainer.innerHTML += `
           <div class="col p-3">
                 <div class="card h-100 border-0 bg-light">
-                  <a href="/listing.html?id=${allListings[i].id}"><img src="${allListings[i].media[0]}" class="card-img-top" style="height: 15rem; object-fit: cover" alt="Image caption: ${allListings[i].title}"></a>
+                  <a href="/listing.html?id=${allListings[i].id}"><img src="${allListings[i].media[0]}" class="card-img-top border-bottom border-1" style="height: 15rem; object-fit: cover" alt="Image caption: ${allListings[i].title}"></a>
                   <div class="card-body">
                     <a href="/listing.html?id=${allListings[i].id}" class="text-decoration-none"><h3 class="card-title pb-0">${allListings[i].title}</h3></a>
                     <p class="card-text">${allListings[i].description}</p>
