@@ -11,39 +11,32 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg my-3">
-            <div class="container-fluid">
-                <div>
-                    <a class="logo" href="logged-in.html">
-                        <img src="assets/images/kutsu.png" alt="company logo" width="90" height="50" class="logo" />
-                    </a>
-                </div>
-                <form class="d-flex left" role="search" id="searchfield">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                </form>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar sticky-top navbar-expand-lg bg-light">
+            <div class="container-fluid text-center">
+                <a class="navbar-brand" href="logged-in.html"><img src="/assets/images/kutsu.png" width="70"
+                        alt="Bid1 Social Media logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse right pe-3" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-background">
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="new-listing.html">New listing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
+                            <a class="nav-link" href="login.html">Logout</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Log in</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="profile.html">My profile</a>
+                            <a class="nav-link p-1 mt-1 mx-2 text-white rounded bg-primary">Credits | <strong
+                                    id="user-credits-container">&emsp;&emsp;</strong></a>
                         </li>
                     </ul>
+                    <span class="navbar-text">
+                        <a href="profile.html"><img src="/assets/images/unknown.png" width="38" height="38"
+                                class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover !important"
+                                id="avatar-nav" alt="User avatar" /></a>
+                    </span>
                 </div>
             </div>
         </nav>
@@ -53,16 +46,16 @@
             <div class="mx-auto" id="brand-width">
                 <ul id="brand-link">
                     <li>
-                        <a class="nav-link-1" href="#">Nike</a>
+                        <a class="nav-link-1" href="index.html">Nike</a>
                     </li>
                     <li>
-                        <a class="nav-link-1" href="#">Adidas</a>
+                        <a class="nav-link-1" href="index.html">Adidas</a>
                     </li>
                     <li>
-                        <a class="nav-link-1" href="#">New Balance</a>
+                        <a class="nav-link-1" href="index.html">New Balance</a>
                     </li>
                     <li>
-                        <a class="nav-link-1" href="#">Jordan</a>
+                        <a class="nav-link-1" href="index.html">Jordan</a>
                     </li>
                 </ul>
             </div>
@@ -137,6 +130,7 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="/js/listings/listing-api.mjs"></script>
     <script type="module" src="/js/bid/add-bid-btn.mjs"></script>
+    <script type="module" src="/js/logged-in/nav.mjs"></script>
 
 </body>
 

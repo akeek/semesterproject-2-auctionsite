@@ -26,10 +26,3 @@ export async function loadUserCredits() {
     }
 }
 loadUserCredits();
-
-function redirectsIfLoggedOut() {
-    if (!userName) {
-        location.href = "/index.html";
-    }
-}
-redirectsIfLoggedOut();

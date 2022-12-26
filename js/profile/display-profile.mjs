@@ -3,6 +3,8 @@ const userAvatar = localStorage.getItem("avatar");
 const userEmail = localStorage.getItem("email");
 const userCredits = localStorage.getItem("credits");
 
+import { redirectsIfLoggedOut } from "../redirect/redirect.mjs";
+
 function showUserAvatar() {
     if (userAvatar === "null") {
         const userAvatarContainer = document.querySelector("#user-avatar");
@@ -24,9 +26,4 @@ function showUserInfo() {
 }
 showUserInfo();
 
-function throwIfLoggedOut() {
-    if (!userName) {
-        location.href = "/login.html";
-    }
-}
-throwIfLoggedOut();
+redirectsIfLoggedOut();

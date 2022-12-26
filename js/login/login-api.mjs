@@ -12,7 +12,7 @@ export async function loginAuthUser(url, userCredentials) {
         if (response.status !== 200) {
             const errorMessage = document.querySelector("#error-message");
             errorMessage.style.display = "block";
-            errorMessage.innerHTML = `${response.statusText}. Only users with a "@stud.noroff.no" account can login. Make sure that your password is between 8 and 20 characters long.`;
+            errorMessage.innerHTML = `${response.statusText} Only users with a "@stud.noroff.no" account can login. Make sure that your password is between 8 and 20 characters long.`;
         } else {
             const errorMessage = document.querySelector("#error-message");
             errorMessage.style.display = "none";
