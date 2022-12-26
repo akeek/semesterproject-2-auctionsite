@@ -24,8 +24,16 @@ body {
   color: var(--bs-secondary);
 }
 
+#navbarSupportedContent {
+  z-index: 1000;
+}
+
 #navbarSupportedContent ul li a {
   color: var(--bs-secondary);
+}
+
+#navbarText {
+  position: absolute;
 }
 
 .card-title {
@@ -4476,9 +4484,11 @@ fieldset:disabled .btn {
   }
 
   #nav-background {
-    padding: 0 20px;
+    padding: 0;
     background-color: white;
     color: white;
+    width: 120px;
+    text-align: center;
   }
 
   .nav-link {
