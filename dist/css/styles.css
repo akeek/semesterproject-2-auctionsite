@@ -70,13 +70,6 @@ footer {
 }
 
 @media (max-width: 991px) {
-  #brand-link {
-    font-size: 0.9rem;
-  }
-
-  #brand-width {
-    width: 75%;
-  }
 
   .logo img {
     width: 70px;
@@ -112,9 +105,6 @@ footer {
 }
 
 @media (max-width: 500px) {
-  #brand-link {
-    font-size: 0.7rem;
-  }
 
   #brand-width {
     width: 90%;
