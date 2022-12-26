@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar sticky-top navbar-expand-lg bg-light">
+    <header class="bg-light">
+        <nav class="navbar sticky-top navbar-expand-lg">
             <div class="container-fluid text-center">
                 <a class="navbar-brand" href="logged-in.html"><img src="/assets/images/kutsu.png" width="70"
-                        alt="logo" /></a>
+                        alt="Company logo" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -42,24 +42,6 @@
         </nav>
     </header>
     <main>
-        <div class="container-fluid mb-4 py-2 mx-0" id="brand-bar">
-            <div class="mx-auto" id="brand-width">
-                <ul id="brand-link">
-                    <li>
-                        <a class="nav-link-1" href="logged-in.html">Nike</a>
-                    </li>
-                    <li>
-                        <a class="nav-link-1" href="logged-in.html">Adidas</a>
-                    </li>
-                    <li>
-                        <a class="nav-link-1" href="logged-in.html">New Balance</a>
-                    </li>
-                    <li>
-                        <a class="nav-link-1" href="logged-in.html">Jordan</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <section class="container px-2 py-3 text-center">
             <h1 class="text-center">My account info</h1>
 
@@ -85,8 +67,8 @@
                     </div>
 
                     <!-- send button -->
-                    <button class="btn btn-small btn-primary" type="submit" id="send-avatar-button">Update
-                        avatar</button>
+                    <button class="btn btn-secondary" type="submit" id="send-avatar-button"><strong>Update
+                            avatar</strong></button>
                     <br />
                     <br />
                 </form>
@@ -101,23 +83,23 @@
             <h2 class="text-start">My listings</h2>
             <section class="mb-2">
                 <!-- add item -->
-                <div class="py-3"><a href="/new-listing.html" class="btn btn-small btn-primary text-white">Add new
-                        item</a></div>
+                <div class="py-3"><a href="/new-listing.html" class="btn btn-secondary"><strong>Add new
+                            item</strong></a></div>
             </section>
             <div class="row row-cols-1 row-cols-md-3 g-3" id="listings-container">
                 <div class="col">
                     <div class="card h-100">
-                        <a href="/item.html"><img src="/assets/images/j1lost.jpg" class="card-img-top"
+                        <a href="listing.html"><img src="/assets/images/j1lost.jpg" class="card-img-top"
                                 alt="Image description" /></a>
                         <div class="card-body">
-                            <a href="/item.html" class="text-decoration-none">
+                            <a href="listing.html" class="text-decoration-none">
                                 <h3 class="card-title">Card title</h3>
                             </a>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional content.</p>
                             <p class="mb-1"><strong>Suggested price:</strong>$$$</p>
                             <p><strong>Deadline: </strong>date & time</p>
-                            <a href="/item.html" class="btn btn-primary px-4 text-white"><strong>Details</strong></a>
+                            <a href="listing.html" class="btn btn-secondary px-4"><strong>Details</strong></a>
                         </div>
                     </div>
                 </div>

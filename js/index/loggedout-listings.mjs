@@ -31,7 +31,7 @@ export function showListingsLoggedOut(allListings) {
                     <p class="mb-0"><strong>Bids: </strong>${allListings[i].bids.length}</p>
                     <p class="mb-0"><strong>Created: </strong>${formattedCreatedDate}<span class="small text-muted">, ${formattedCreatedTime}</span></p>
                     <p class="mb-3"><strong>Ends at: </strong>${formattedDeadlineDate}<span class="small text-muted">, ${formattedDeadlineTime}</span></p>
-                    <a href="/login.html"><button class="btn btn-primary" style="width: 50%"><strong>Bid now</strong></button></a>
+                    <a href="/login.html"><button class="btn btn-secondary" style="width: 50%"><strong>Bid now</strong></button></a>
                     </div>
                 </div>
               </div>

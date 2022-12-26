@@ -24,7 +24,7 @@ export function showBids(itemInfo) {
         bidsContainer.innerHTML = `
           <div class="row mb-3">
               <div class="col text-center">
-                <p class="mb-1">Nothing yet! Who's gonna go first?</p>  
+                <p class="mb-1">No bids yet.</p>  
               </div>
           </div>
       `;

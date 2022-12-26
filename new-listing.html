@@ -10,11 +10,11 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+  <header class="bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg">
       <div class="container-fluid text-center">
         <a class="navbar-brand" href="logged-in.html"><img src="/assets/images/kutsu.png" width="70"
-            alt="Bid1 Social Media logo" /></a>
+            alt="Company logo" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -41,24 +41,6 @@
     </nav>
   </header>
   <main>
-    <div class="container-fluid mb-4 py-2 mx-0" id="brand-bar">
-      <div class="mx-auto" id="brand-width">
-        <ul id="brand-link">
-          <li>
-            <a class="nav-link-1" href="logged-in.html">Nike</a>
-          </li>
-          <li>
-            <a class="nav-link-1" href="logged-in.html">Adidas</a>
-          </li>
-          <li>
-            <a class="nav-link-1" href="logged-in.html">New Balance</a>
-          </li>
-          <li>
-            <a class="nav-link-1" href="logged-in.html">Jordan</a>
-          </li>
-        </ul>
-      </div>
-    </div>
     <!-- HEADER -->
     <section class="container px-3 m-2 col-lg-5 m-auto">
       <h1 class="text-center mt-4 mb-0">Add new listing</h1>
@@ -99,7 +81,7 @@
         <!-- image url -->
         <div class="mb-0">
           <hr class="mb-1 text-primary" />
-          <p class="text-muted"><strong>Gallery: please add 3 images</strong></p>
+          <p class="text-muted"><strong>Feel free to add more than 1 picture</strong></p>
           <input type="url" name="media1" id="media1" class="form-control" placeholder="Image URL 1" maxlength="1000"
             title="Example: https://img01.ztat.net/article/spp-media-p1/7b94b240a4234f2e8b2e9a175fb74d29/ff3c19a85cf0486d95bec59cf2eafb43.jpg?imwidth=762"
             required />
@@ -125,7 +107,7 @@
         </div>
 
         <!-- button -->
-        <button type="submit" class="w-100 btn btn-lg btn-primary text-white" id="add-item-button"><strong>Add
+        <button type="submit" class="w-100 btn btn-lg btn-secondary text-white" id="add-item-button"><strong>Add
             listing</strong></button>
         <br />
         <br />
