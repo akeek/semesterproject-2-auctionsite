@@ -14,6 +14,7 @@ const time = document.querySelector("#time");
 const media1 = document.querySelector("#media1");
 const media2 = document.querySelector("#media2");
 const media3 = document.querySelector("#media3");
+const media4 = document.querySelector("#media4");
 
 addNewItemForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -24,7 +25,7 @@ addNewItemForm.addEventListener("submit", (event) => {
         title: `${title.value}`,
         description: `${description.value}`,
         tags: [],
-        media: [`${media1.value}`, `${media2.value}`, `${media3.value}`],
+        media: [`${media1.value}`, `${media2.value}`, `${media3.value}`, `${media4.value}`],
         endsAt: endsAt,
     };
 
