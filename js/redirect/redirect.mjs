@@ -1,4 +1,4 @@
-const userName = localStorage.getItem("name")
+const userName = localStorage.getItem("name");
 
 export function redirectsIfLoggedOut() {
     if (!userName) {

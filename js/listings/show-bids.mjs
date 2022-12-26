@@ -6,9 +6,9 @@ export function showBids(itemInfo) {
         const bidsContainer = document.querySelector("#bids-container");
 
         bidsContainer.innerHTML += `
-          <div class="row mb-3">
+          <div class="row mb-3 border border-secondary border-1 rounded-3">
               <div class="col">
-                  <p class="mb-1 bg-info rounded p-3"><strong>${itemInfo[i].amount}</strong></p>
+                  <p class="my-1 bg-secondary rounded p-3"><strong>${itemInfo[i].amount}</strong></p>
               </div>
               <div class="col text-start">
                   <p class="mb-0"><strong>${itemInfo[i].bidderName}</strong></p>

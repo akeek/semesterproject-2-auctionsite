@@ -90,6 +90,16 @@ footer {
     position: absolute;
     left: 100px;
   }
+
+  #navbarText a {
+    background-color: white;
+    color: var(--bs-primary);
+  }
+
+  #navbarText a:hover {
+    background-color: var(--bs-primary);
+    color: white;
+  }
 }
 
 @media (max-width: 500px) {
@@ -141,7 +151,7 @@ footer {
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 13, 110, 253;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-secondary-rgb: 222, 192, 159;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;

@@ -1,7 +1,6 @@
 localStorage.clear();
 
 import { allListingsDesc } from "../api-stuff/base-urls.mjs";
-import { listingsByProfileURL } from "../api-stuff/base-urls.mjs";
 import { showListingsLoggedOut } from "./loggedout-listings.mjs";
 import { searchListings } from "../searchbar/searchbar.mjs";
 import { clearSearchField } from "../searchbar/searchbar.mjs";
