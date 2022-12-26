@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg bg-light">
+            <div class="container-fluid text-center">
+                <a class="navbar-brand" href="/logged-in.html"><img src="/assets/images/kutsu.png" width="70"
+                        alt="Bid1 Social Media logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/new-listing.html">New listing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Logout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-1 mt-1 mx-2 text-white rounded bg-primary">Credits | <strong
+                                    id="user-credits-container">&emsp;&emsp;</strong></a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a href="/profile.html"><img src="/assets/images/unknown.png" width="38" height="38"
+                                class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover !important"
+                                id="avatar-nav" alt="User avatar" /></a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid mb-4 py-2 mx-0" id="brand-bar">
+            <div class="mx-auto" id="brand-width">
+                <ul id="brand-link">
+                    <li>
+                        <a class="nav-link-1" href="#">Nike</a>
+                    </li>
+                    <li>
+                        <a class="nav-link-1" href="#">Adidas</a>
+                    </li>
+                    <li>
+                        <a class="nav-link-1" href="#">New Balance</a>
+                    </li>
+                    <li>
+                        <a class="nav-link-1" href="#">Jordan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-img">
+            <img src="assets/images/j1lost.jpg" alt="epic sneakers" class="header-img" />
+        </div>
+        <div style="min-height: 80vh; max-width: 1600px; margin: auto">
+            <!-- HEADER -->
+            <section class="container-fluid text-start px-5 my-5" id="greeting-container"></section>
+
+            <!-- MAIN CONTENT -->
+            <section class="px-5">
+                <hr />
+                <!-- filters and search bar -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <h2>Active listings</h2>
+                    </div>
+
+                    <div class="col" style="min-width: 250px">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="text" placeholder="Search..." aria-label="Search"
+                                id="search-input" />
+                            <button class="btn btn-outline-primary" type="button"
+                                id="search-clear-button">Clear</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- listings container -->
+                <div class="text-center my-5" id="status-container"></div>
+                <div class="row row-cols-1 row-cols-md-3 g-3" id="listings-container"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>This is going to be a great footer</p>
+        </div>
+    </footer>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/js/logged-in/api-call.mjs"></script>
+    <script type="module" src="/js/logged-in/search-bar.mjs"></script>
+    <script type="module" src="/js/logged-in/nav.mjs"></script>
+
+</body>
+
+</html>
