@@ -36,12 +36,16 @@ body {
   color: #000;
 }
 
+.top-img {
+  margin-bottom: 30px;
+}
+
 .header-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  padding: 20px 0px;
+  padding-top: 30px;
 }
 
 footer {
@@ -108,12 +112,18 @@ footer {
     color: white;
     background-color: var(--bs-primary);
   }
+
+  .header-img {
+    width: 80%;
+    padding-top: 20px;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
 
-  #brand-width {
+  .header-img {
     width: 90%;
+    padding-top: 10px;
   }
 }
 
