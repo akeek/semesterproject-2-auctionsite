@@ -6,13 +6,18 @@ const userCredits = localStorage.getItem("credits");
 import { redirectsIfLoggedOut } from "../redirect/redirect.mjs";
 
 function showUserAvatar() {
-    if (userAvatar === "null") {
-        const userAvatarContainer = document.querySelector("#user-avatar");
-        userAvatarContainer.innerHTML = `<img src="/assets/j1lost.jpg" class="rounded-circle" style="width: 200px; height: 200px; object-fit: cover; border-width: 4px !important;" id="profile-avatar" alt=""></img>`;
+    if (userAvatar === "") {
+        let img = document.createElement("img");
+        img.src = "assets/images/cookiemonster.jpeg";
+        img.classList.add("rounded-circle")
+
+        let userAvatarContainer = document.getElementById("user-avatar");
+        userAvatarContainer.appendChild(img);
     } else {
         const userAvatarContainer = document.querySelector("#user-avatar");
-        userAvatarContainer.innerHTML = `<img src="${userAvatar}" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover; border-width: 1px !important;" id="profile-avatar" alt=""></img>`;
+        userAvatarContainer.innerHTML = `<img src="${userAvatar}" class="rounded-circle" id="profile-avatar" alt=""></img>`;
     }
+    console.log(userAvatar)
 }
 showUserAvatar();
 

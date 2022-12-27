@@ -29,8 +29,8 @@ export function displayListingInfo(itemInfo) {
   <h2 class="mt-3 mb-1">Description</h2>
         <p>${itemInfo.description}</p>
         <p><strong>OWNER | </strong>${itemInfo.seller.name}</p>
-        <p><strong class="text-dark">DATE ADDED | </strong>${formattedCreatedDate}<span class="small text-muted">, ${formattedCreatedTime}</span></p>
-        <p><strong>ENDS AT | </strong>${formattedDeadlineDate}<span class="small text-muted">, ${formattedDeadlineTime}</span></p>
+        <p><strong class="text-dark">DATE ADDED | </strong>${formattedCreatedDate}<span class="text-muted">, ${formattedCreatedTime}</span></p>
+        <p><strong>ENDS AT | </strong>${formattedDeadlineDate}<span class="text-muted">, ${formattedDeadlineTime}</span></p>
   `;
 
 

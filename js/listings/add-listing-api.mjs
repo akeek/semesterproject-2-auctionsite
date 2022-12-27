@@ -36,7 +36,7 @@ addNewItemForm.addEventListener("submit", (event) => {
             const response = await fetch(createListingURL, createListing);
             const json = await response.json();
             if (response.status === 201) {
-                location.href = "/profile.html";
+                location.href = "profile.html";
             } else {
                 errorMessage.style.display = "block";
                 errorMessage.innerHTML = ``;

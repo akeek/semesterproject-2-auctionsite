@@ -1,9 +1,7 @@
-// Get the item ID via the query string from the previous page
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const itemID = urlParams.get("id");
 
-// import the URL for the API call
 import { getListingURL } from "../api-stuff/base-urls.mjs";
 const listingURL = getListingURL(itemID);
 
