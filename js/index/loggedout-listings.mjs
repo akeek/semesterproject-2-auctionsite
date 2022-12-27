@@ -4,7 +4,7 @@ export function showListingsLoggedOut(allListings) {
 
   for (let i = 0; i < allListings.length; i++) {
     if (allListings[i].media.length === 0) {
-      allListings[i].media = ["/assets/images/unknown.png"];
+      allListings[i].media = ["/assets/images/image-not-found.png"];
     }
 
     if (!allListings[i].description) {
