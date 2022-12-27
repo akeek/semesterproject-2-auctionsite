@@ -21,7 +21,7 @@ body {
 }
 
 #navbarText ul li a {
-  color: var(--bs-secondary);
+  color: var(--bs-primary);
 }
 
 #navbarSupportedContent {
@@ -29,7 +29,7 @@ body {
 }
 
 #navbarSupportedContent ul li a {
-  color: var(--bs-secondary);
+  color: var(--bs-primary);
 }
 
 .card-title {
