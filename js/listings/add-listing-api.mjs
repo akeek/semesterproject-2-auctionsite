@@ -25,7 +25,7 @@ addNewItemForm.addEventListener("submit", (event) => {
         title: `${title.value}`,
         description: `${description.value}`,
         tags: [],
-        media: [`${media1.value}`, `${media2.value}`, `${media3.value}` `${media4.value}`],
+        media: [`${media1.value}`, `${media2.value}`, `${media3.value}`, `${media4.value}`],
         endsAt: endsAt,
     };
 
