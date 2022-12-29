@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/css/styles.css" />
+    <link rel="stylesheet" href="/dist/css/modal.css" />
     <title>Document</title>
 </head>
 
@@ -45,19 +46,13 @@
     </header>
     <main>
         <div style="min-height: 80vh">
-            <!-- HEADER -->
             <section class="container px-5 m-5 col-lg-8 m-auto text-center" id="item-name">
             </section>
-
             <section class="container px-3 m-5 col-lg-8 m-auto text-center">
                 <div id="gallery-container" class="carousel slide" data-bs-ride="carousel">
-                    <!-- Dots -->
                     <div class="carousel-indicators" id="slider-buttons-container">
                     </div>
-
-                    <!-- slideshow -->
                     <div class="carousel-inner rounded-3" id="image-container">
-                        <!-- side arrows -->
                         <div id="slider-arrows">
                             <button class="carousel-control-prev" type="button" data-bs-target="#gallery-container"
                                 data-bs-slide="prev">
@@ -72,10 +67,8 @@
                 </div>
             </section>
 
-            <!-- ITEM INFO  -->
             <section class="container px-3 m-5 col-lg-8 m-auto" id="item-info"></section>
 
-            <!-- PLACE YOUR BID -->
             <section class="container my-4 p-2 col-lg-8 m-auto bg-secondary rounded-3" id="place-your-bid-section">
                 <div class="row my-3">
                     <div class="col">
@@ -96,9 +89,15 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="myModal" class="modal center">
+                    <div class="modal-content">
+                        <p class="text-center mt-2">Your bid was successful. You are now the highest bidder!</p>
+                        <span class="close">&times;</span>
+                    </div>
+                </div>
             </section>
 
-            <!-- BIDS -->
             <section class="container m-5 p-3 col-lg-5 m-auto text-center">
                 <h3>Bid history</h3>
                 <div id="bids-container"></div>
@@ -118,6 +117,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
+    <script type="module" src="/js/modal-for-bid/bid-modal.mjs"></script>
 
 </body>
 

@@ -1,9 +1,12 @@
+var bidButton = document.getElementById("bid-button");
+var bidModal = document.getElementById("myModal");
 
 export async function sendBidToAPI(url, method) {
     try {
         const response = await fetch(url, method);
         const json = await response.json();
         if (response.status === 200) {
+            bidButton.onclick = bidModal.style.display = "block";
             const bidForm = document.querySelector("#bid-form");
             const bidAmount = document.querySelector("#bid-amount");
             bidForm.innerHTML = `
