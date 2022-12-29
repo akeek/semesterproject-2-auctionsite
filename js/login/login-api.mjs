@@ -24,6 +24,7 @@ export async function loginAuthUser(url, userCredentials) {
             localStorage.setItem("token", json.accessToken);
 
             location.href = "logged-in.html";
+            window.alert("Login successful");
         }
     } catch (error) {
         console.log(error);
