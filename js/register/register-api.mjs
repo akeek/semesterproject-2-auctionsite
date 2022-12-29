@@ -10,10 +10,13 @@ export async function registerNewUser(registerURL, newUserObject) {
 
         if (response.status !== 201) {
             const errorMessage = document.querySelector("#error-message");
+            const errorEmail = document.querySelector("#error-message-email");
             errorMessage.style.display = "block";
+            errorEmail.style.display = "block";
             errorMessage.innerHTML = `${json.errors[0].message}`;
+            errorEmail.innerHTML = `${json.errors[0].message}`;
         } else {
-            location.href = "/login.html";
+            location.href = "login.html";
         }
     } catch (error) {
         console.log(error);

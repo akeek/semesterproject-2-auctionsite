@@ -43,13 +43,14 @@
       <div class="container px-4 py-1 col-lg-4 col-sm-12 text-center">
         <h1 class="text-center mt-4 mb-4">Sign up</h1>
         <div class="form-signin">
-          <form action="/profile.html" id="signupform">
+          <form action="login.html" id="registration-form">
 
             <div class="form-floating mb-4">
               <input type="text" name="name" id="username" class="form-control" placeholder="Ola Nordmann"
                 maxlength="20" pattern="^[\w]+$"
                 title="Username must not contain punctuation symbols apart from underscore" required />
               <label for="username">Username</label>
+              <p id="error-message-name"></p>
             </div>
 
 
@@ -58,6 +59,7 @@
                 maxlength="100" pattern="^[\w\-.]+@stud.?noroff.no$" title="Enter a valid @stud.noroff.no email address"
                 required />
               <label for="email">Email</label>
+              <p id="error-message-email"></p>
             </div>
 
 
@@ -66,6 +68,7 @@
                 maxlength="20" minlength="8" pattern="^.(?=.{7,})(?=.[a-zA-Z]).*$"
                 title="Password must be between 8 and 20 characters long" required />
               <label class="was-validated" for="password">Password</label>
+              <p id="error-message-password"></p>
             </div>
 
 
