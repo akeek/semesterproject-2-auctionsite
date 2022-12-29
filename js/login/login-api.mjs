@@ -2,6 +2,8 @@ localStorage.clear();
 import { methodsOfFetch } from "../api-stuff/fetch-method.mjs";
 const { loginUser } = methodsOfFetch;
 
+const loginBtn = document.querySelector("#loginBtn");
+const loginModal = document.querySelector("#loginModal");
 
 export async function loginAuthUser(url, userCredentials) {
     try {
@@ -17,14 +19,15 @@ export async function loginAuthUser(url, userCredentials) {
             const errorMessage = document.querySelector("#error-message");
             errorMessage.style.display = "none";
 
+            loginBtn.onclick = loginModal.style.display = "block";
+
             localStorage.setItem("name", json.name);
             localStorage.setItem("email", json.email);
             localStorage.setItem("credits", json.credits);
             localStorage.setItem("avatar", json.avatar);
             localStorage.setItem("token", json.accessToken);
 
-            location.href = "logged-in.html";
-            window.alert("Login successful");
+            setTimeout(() => { location.href = "logged-in.html" }, 2500);
         }
     } catch (error) {
         console.log(error);

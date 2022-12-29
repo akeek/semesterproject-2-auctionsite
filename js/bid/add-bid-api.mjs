@@ -1,5 +1,5 @@
 var bidButton = document.getElementById("bid-button");
-var bidModal = document.getElementById("myModal");
+var bidModal = document.getElementById("bidModal");
 
 export async function sendBidToAPI(url, method) {
     try {
