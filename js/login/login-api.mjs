@@ -27,7 +27,7 @@ export async function loginAuthUser(url, userCredentials) {
             localStorage.setItem("avatar", json.avatar);
             localStorage.setItem("token", json.accessToken);
 
-            setTimeout(() => { location.href = "logged-in.html" }, 2000);
+            setTimeout(() => { location.href = "profile.html" }, 2000);
         }
     } catch (error) {
         console.log(error);
