@@ -88,6 +88,7 @@ footer {
   border-width: 1px;
 }
 
+
 @media (max-width: 991px) {
 
   .logo img {
@@ -125,6 +126,14 @@ footer {
   .header-img {
     width: 80%;
     padding-top: 20px;
+  }
+
+  #bids-section {
+    width: 90%;
+  }
+
+  #place-your-bid-section {
+    max-width: 90%;
   }
 }
 
