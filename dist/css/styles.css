@@ -126,12 +126,6 @@ footer {
     width: 80%;
     padding-top: 20px;
   }
-
-  .top-text {
-    font-size: 1rem;
-    position: relative;
-    left: -10px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -140,18 +134,14 @@ footer {
     width: 90%;
     padding-top: 10px;
   }
-}
-
-@media (max-width: 475px) {
 
   .top-text {
-    font-size: 0.7rem;
     position: relative;
     left: -10px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 345px) {
 
   .top-text {
     display: none;
