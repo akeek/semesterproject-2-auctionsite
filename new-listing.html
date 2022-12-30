@@ -42,28 +42,21 @@
     </nav>
   </header>
   <main>
-    <!-- HEADER -->
     <section class="container px-3 m-2 col-lg-5 m-auto">
       <h1 class="text-center mt-4 mb-0">Add new listing</h1>
     </section>
-    <!-- ADD ITEM  -->
     <div class="container px-3 py-4 col-lg-5 col-sm-12">
       <form action="/profile.html" id="add-new-item-form">
-        <!-- title -->
         <div class="">
           <input type="text" name="title" id="title" class="form-control" placeholder="Item name" maxlength="250"
-            title="Please add a title to your post" />
+            title="Please add a title to your post" required />
           <label for="title" style="visibility: hidden">Title</label>
         </div>
-
-        <!-- description -->
         <div class="">
           <textarea name="description" id="description" class="form-control" placeholder="Item description"
-            maxlength="300" rows="4"></textarea>
+            maxlength="300" rows="4" required></textarea>
           <label for="description" style="visibility: hidden">Description</label>
         </div>
-
-        <!-- ends at -->
         <div class="mb-0">
           <hr class="mb-1 text-primary" />
           <p class="text-muted"><strong>Ends at</strong></p>
@@ -78,8 +71,6 @@
             </div>
           </div>
         </div>
-
-        <!-- image url -->
         <div class="mb-0">
           <hr class="mb-1 text-primary" />
           <p class="text-muted"><strong>Please add 4 pictures</strong></p>
@@ -91,23 +82,24 @@
 
         <div class="mb-0">
           <input type="url" name="media2" id="media2" class="form-control" placeholder="Image URL 2" maxlength="1000"
-            title="Example: https://img01.ztat.net/article/spp-media-p1/7b94b240a4234f2e8b2e9a175fb74d29/ff3c19a85cf0486d95bec59cf2eafb43.jpg?imwidth=762" />
+            title="Example: https://img01.ztat.net/article/spp-media-p1/7b94b240a4234f2e8b2e9a175fb74d29/ff3c19a85cf0486d95bec59cf2eafb43.jpg?imwidth=762"
+            required />
           <label for="media2" style="visibility: hidden">Media 2</label>
         </div>
 
         <div class="mb-0">
           <input type="url" name="media3" id="media3" class="form-control" placeholder="Image URL 3" maxlength="1000"
-            title="Example: https://img01.ztat.net/article/spp-media-p1/7b94b240a4234f2e8b2e9a175fb74d29/ff3c19a85cf0486d95bec59cf2eafb43.jpg?imwidth=762" />
+            title="Example: https://img01.ztat.net/article/spp-media-p1/7b94b240a4234f2e8b2e9a175fb74d29/ff3c19a85cf0486d95bec59cf2eafb43.jpg?imwidth=762"
+            required />
           <label for="media3" style="visibility: hidden">Media 3</label>
         </div>
 
         <div class="mb-0">
           <input type="url" name="media3" id="media4" class="form-control" placeholder="Image URL 4" maxlength="1000"
-            title="Example: https://img01.ztat.net/article/spp-media-p1/7b94b240a4234f2e8b2e9a175fb74d29/ff3c19a85cf0486d95bec59cf2eafb43.jpg?imwidth=762" />
+            title="Example: https://img01.ztat.net/article/spp-media-p1/7b94b240a4234f2e8b2e9a175fb74d29/ff3c19a85cf0486d95bec59cf2eafb43.jpg?imwidth=762"
+            required />
           <label for="media4" style="visibility: hidden">Media 4</label>
         </div>
-
-        <!-- button -->
         <button type="submit" class="w-100 btn btn-lg btn-secondary text-white" id="add-item-button"><strong>Add
             listing</strong></button>
         <br />

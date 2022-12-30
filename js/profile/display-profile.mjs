@@ -17,7 +17,6 @@ function showUserAvatar() {
         const userAvatarContainer = document.querySelector("#user-avatar");
         userAvatarContainer.innerHTML = `<img src="${userAvatar}" class="rounded-circle" id="profile-avatar" alt=""></img>`;
     }
-    console.log(userAvatar)
 }
 showUserAvatar();
 
