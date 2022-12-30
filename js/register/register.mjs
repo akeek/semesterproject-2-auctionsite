@@ -12,10 +12,8 @@ errorEmail.style.display = "none";
 registrationForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    // Create object from form input fields
     const myFormData = new FormData(event.target);
     const newUserObject = Object.fromEntries(myFormData.entries());
 
-    // Register new user in API
     registerNewUser(registerUserURL, newUserObject);
 });

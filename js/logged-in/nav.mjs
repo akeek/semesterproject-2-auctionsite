@@ -3,8 +3,13 @@ function loadUserAvatar() {
     const avatarNavURL = localStorage.getItem("avatar");
     avatarNavURLContainer.src = avatarNavURL;
 
-    if (avatarNavURL === "null") {
-        avatarNavURLContainer.src = "/assets/images/unknown.png";
+    if (avatarNavURL === "") {
+        // In case one-error fails in HTML
+        avatarNavURLContainer.src = "/assets/images/cookiemonster.jpeg";
+        avatarNavURLContainer.style.height = "40px";
+        avatarNavURLContainer.style.width = "40px";
+        avatarNavURLContainer.classList.add("rounded-circle")
+
     }
 }
 loadUserAvatar();
@@ -19,7 +24,7 @@ export async function loadUserCredits() {
         const json = await response.json();
         const userCreditsContainer = document.querySelector("#user-credits-container");
         userCreditsContainer.innerHTML = `${json.credits}`;
-        // send credits to localStorage
+
         localStorage.setItem("credits", json.credits);
     } catch (error) {
         console.log(error);

@@ -10,10 +10,8 @@ errorMessage.style.display = "none";
 loginForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    // Creates user object
     const myFormData = new FormData(event.target);
     const userToLoginObject = Object.fromEntries(myFormData.entries());
 
-    // Logs in user in API
     loginAuthUser(loginUserURL, userToLoginObject);
 });

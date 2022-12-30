@@ -7,7 +7,7 @@ export async function newAvatar(url, avatarObject) {
         const response = await fetch(url, updateAvatar);
         const json = await response.json();
         localStorage.setItem("avatar", json.avatar);
-        location.href = "/profile.html";
+        location.href = "profile.html";
     } catch (error) {
         console.log(error);
     }
