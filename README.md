@@ -1,12 +1,14 @@
-# semesterproject-2-auctionsite
+# Semesterproject 2 - Auctionsite
 
-# How to setup and run the project locally:
+![Screenshot](./assets/images/Kutsu%20homepage.png)
+
+## How to setup and run the project locally:
 - Clone the repository
 - Run `npm install` to install package dependencies
 - Run `npm run watch` to preview the site live
 - Register for a profile, or login if you already have one
 
-# App features
+## App features
 
 - A user with a stud.noroff.no email may register
 - A registered user may login
@@ -21,6 +23,22 @@
 - A registered user may remove their listings
 - An unregistered user may search through Listings
 
-# Link to live site (hosted project)
+## This project was built and designed with
+
+- HTML
+- Javascript
+- SASS
+- VS Code
+- Bootstrap
+- Git
+- API from Noroff
+- Adobe XD
+
+## Dependencies
+
+- Bootstrap 5.2.2
+- SASS 1.56.1
+
+## Link to live site (hosted project)
 
 https://marvelous-flan-9e269b.netlify.app/
