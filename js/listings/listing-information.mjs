@@ -3,6 +3,9 @@ export function displayListingInfo(itemInfo) {
     const pageTitle = document.querySelector("title");
     pageTitle.innerHTML = `Kutsu | ${itemInfo.title}`
 
+    document.getElementsByTagName('meta')["description"].content = `The author describes this as: ${itemInfo.description}`
+
+
     const itemName = document.querySelector("#item-name");
     itemName.innerHTML = `
     <h1 class="text-center mt-5">${itemInfo.title}</h1>
