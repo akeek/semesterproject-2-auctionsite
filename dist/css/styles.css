@@ -93,7 +93,11 @@ footer {
 }
 
 #credits {
-  padding-left: 05px;
+  padding-left: 5px;
+}
+
+#navlink-p {
+  margin-bottom: 0;
 }
 
 
@@ -120,6 +124,13 @@ footer {
 
   #navbarText {
     background-color: white;
+    width: 130px;
+    position: absolute;
+    right: 69px;
+  }
+
+  #nav-background {
+    width: 130px;
   }
 
   #navbarText ul li a {
@@ -151,6 +162,7 @@ footer {
   #credits p {
     margin: 0;
   }
+
 }
 
 @media (max-width: 767px) {
