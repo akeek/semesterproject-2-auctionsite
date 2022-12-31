@@ -27,6 +27,9 @@ function showUserInfo() {
     <p class="text-center" id="user-credits"><b>Credits: </b>${userCredits}</p> 
     <p class="text-center" id="user-email"><b>Email: </b>${userEmail}</p>  
 `;
+
+    const pageTitle = document.querySelector("title");
+    pageTitle.innerHTML = `Kutsu | ${userName}´s profile`;
 }
 showUserInfo();
 
