@@ -36,7 +36,7 @@
 
 ## Dependencies
 
-- Bootstrap 5.2.2
+- Bootstrap 5.2.3
 - SASS 1.56.1
 
 ## Link to live site (hosted project)
