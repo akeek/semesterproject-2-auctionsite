@@ -147,6 +147,10 @@ footer {
   #credits {
     padding-left: 0;
   }
+
+  #credits p {
+    margin: 0;
+  }
 }
 
 @media (max-width: 767px) {
