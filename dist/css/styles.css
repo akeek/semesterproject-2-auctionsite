@@ -100,6 +100,15 @@ footer {
   margin-bottom: 0;
 }
 
+#gannt,
+#kanban {
+  display: flex;
+  width: 100%;
+  padding: 30px 0;
+  height: auto;
+  margin: auto;
+}
+
 
 @media (max-width: 991px) {
 
